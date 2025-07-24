@@ -1,0 +1,17 @@
+[project]
+name = "carbon-offset"
+description = ""
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+
+[contracts.carbon-pledge]
+path = "contracts/carbon-pledge.clar"
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
